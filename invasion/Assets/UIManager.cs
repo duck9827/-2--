@@ -7,6 +7,7 @@ public class UIManager : Singletorn<UIManager>
 {
     [SerializeField] private Slider slider;
     [SerializeField] private BossStatus bossStatus;
+    [SerializeField] private GameObject menu;
     void Start()
     {
         
@@ -16,6 +17,11 @@ public class UIManager : Singletorn<UIManager>
     void Update()
     {
         slider.value = bossStatus.percent;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menu.SetActive(!menu.activeSelf);
+        }
     }
 
 

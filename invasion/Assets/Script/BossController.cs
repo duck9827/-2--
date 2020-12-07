@@ -7,7 +7,7 @@ public enum BossState {
     idle, pattern1, pattern2, pattern3, pattern4, dead
 }
 
-public class BossController : MonoBehaviour
+public class BossController : Singletorn<BossController>
 {
 
     private BossState state;
@@ -68,4 +68,12 @@ public class BossController : MonoBehaviour
                 break;
         }
     }
+
+    public void Init()
+    {
+        state = BossState.idle;
+        _status.Init();
+        transform.position = new Vector3(0, 0, 33);
+    }
+
 }

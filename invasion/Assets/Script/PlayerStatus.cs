@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : Singletorn<PlayerStatus>
 {
     public int life = 3;
     public int power = 1;
@@ -23,5 +23,11 @@ public class PlayerStatus : MonoBehaviour
 
         }
     }
+    public void Init()
+    {
+        life = 3;
+        power = 1;
 
+        transform.position = Vector3.zero;
+    }
 }

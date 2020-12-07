@@ -16,7 +16,7 @@ public class BossStatus : MonoBehaviour
     }
     void Start()
     {
-        HP = MaxHP;
+        Init();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,5 +27,9 @@ public class BossStatus : MonoBehaviour
 
             other.gameObject.SetActive(false);//임시로 삭제
         }
+    }
+    public void Init()
+    {
+        HP = MaxHP;
     }
 }

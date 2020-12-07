@@ -5,27 +5,40 @@ using UnityEngine;
 public class BossPattern2 : Singletorn<BossPattern2>
 {
     public GameObject bullet;//임시
-    
-    private float time = 0;
-    private bool active = false;
 
+    [SerializeField] float patroll = 10f;
+    [SerializeField] float patrollDelay = 5f;
+    private bool active = false;
+    private Vector3 d;
+
+    private void Update()
+    {
+        if(active)
+            transform.position = Vector3.Lerp(transform.position, d, 0.005f);
+
+    }
 
     public void StartPattern()
     {
         active = true;
-        StartCoroutine("circleatack", 3);
+        d = transform.position + new Vector3(patroll * -0.5f, 0, 0);
+        StartCoroutine("circleattack", 3);
+        StartCoroutine("triattack", 5);
+        StartCoroutine("moving");
     }
     public void StopPattern()
     {
         active = false;
+        StopCoroutine("circleattack");
+        StopCoroutine("triattack");
+        StopCoroutine("moving");
     }
 
-    IEnumerator circleatack()
+    IEnumerator circleattack()
     {
         int r = 0;
         while (active)
-        {
-            
+        { 
             for (int i = 0; i < 12; i++)
             {
                 Vector3 p = new Vector3(Mathf.Sin((i * 30 + r) * 6.28f / 360), 0, Mathf.Cos((i * 30 + r) * 6.28f / 360));
@@ -36,5 +49,41 @@ public class BossPattern2 : Singletorn<BossPattern2>
             yield return new WaitForSeconds(0.5f);
         }
     }
+    IEnumerator triattack()
+    {
+        while (active)
+        {
+            for (int i = 1; i < 6; i++)
+            {
+                for (int j = -1; j < 2; j++) {
+                    Vector3 p = (PlayerStatus.Instance.transform.position - transform.position);
+                    p.y = 0;
+                    p = Quaternion.AngleAxis(j * 15, Vector3.up) * p;
+                    p = p.normalized;
+                    
 
+                    GameObject o = ObjectPoolManager.Instance.Spawn("enB", transform.position, Quaternion.identity);
+                    o.GetComponent<Rigidbody>().AddForce(p * i);
+
+                    o.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                }
+            }
+            yield return new WaitForSeconds(2f);
+        }
+    }
+    IEnumerator moving()
+    {
+        bool t = true;
+        while (active)
+        {
+            if (t)
+                d += new Vector3(patroll, 0, 0);
+            else
+                d -= new Vector3(patroll, 0, 0);
+
+            t = !t;
+
+            yield return new WaitForSeconds(patrollDelay);
+        }
+    }
 }
