@@ -6,7 +6,7 @@ public class PlayerStatus : Singletorn<PlayerStatus>
 {
     public int life = 3;
     public int power = 1;
-
+    
 
     private void OnTriggerEnter(Collider other)
     {
