@@ -6,24 +6,29 @@
     <e p="D:\선재\과제\게임엔진2\텀프\-2--\invasion" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BulletState.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
-        <e p="HP_Zero.cs" t="Include" />
         <e p="Pixel Font - Tripfive" t="Include">
           <e p="_README.txt" t="Include" />
         </e>
-        <e p="scale_fix.cs" t="Include" />
         <e p="Script" t="Include">
-          <e p="BossController.cs" t="Include" />
-          <e p="BossPattern2.cs" t="Include" />
-          <e p="BossStatus.cs" t="Include" />
+          <e p="Boss" t="Include">
+            <e p="BossController.cs" t="Include" />
+            <e p="BossPattern2.cs" t="Include" />
+            <e p="BossStatus.cs" t="Include" />
+          </e>
+          <e p="BulletState.cs" t="Include" />
           <e p="ObjectPoolManager.cs" t="Include" />
-          <e p="PlayerController.cs" t="Include" />
-          <e p="PlayerStatus.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerStatus.cs" t="Include" />
+          </e>
           <e p="Singletorn.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="HP_Zero.cs" t="Include" />
+            <e p="scale_fix.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
         </e>
-        <e p="UI_manager_player.cs" t="Include" />
-        <e p="UIManager.cs" t="Include" />
       </e>
       <e p="invasion.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
