@@ -63,6 +63,7 @@
      <Compile Include="Assets\Script\UI\HP_Zero.cs" />
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Singletorn.cs" />
+     <Compile Include="Assets\Script\UI\PlayerHP.cs" />
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

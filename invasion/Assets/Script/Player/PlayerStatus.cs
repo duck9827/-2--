@@ -1,21 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerStatus : Singletorn<PlayerStatus>
 {
-    public int life = 3;
+    public float MaxHp;
+    public float Hp;
+    //[SerializeField] private float Hp;
     public int power = 1;
-    //[SerializeField] private Camera cam;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "bullet")
         {
-            life -= 1;
+            Hp -= 0.01f;
 
             other.gameObject.SetActive(false);//임시로 삭제
 
-            if(life == 0)
+            if(Hp == 0)
             {
                 print("You dead");
             }
@@ -23,20 +26,23 @@ public class PlayerStatus : Singletorn<PlayerStatus>
         }
     }
     
-    //private void Update()
-    //{
-        //var dir = (cam.transform.forward *
-            //Input.GetAxis("Vertical") + cam.transform.right * Input.GetAxis("Horizontal")).normalized;
-        
-        
-        //보는 방향으로 플레이어 회전
-        //transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
-    //}
+    public float percent
+    {
+        get
+        {
+            return Hp / (float)MaxHp;
+        }
+    }
     
-    
+    public void Start()
+    {
+        Init();
+    }
+
     public void Init()
     {
-        life = 3;
+        MaxHp = 1.0f;
+        Hp = 1.0f;
         power = 1;
 
         transform.position = Vector3.zero;
