@@ -6,7 +6,7 @@ public class PlayerStatus : Singletorn<PlayerStatus>
 {
     public int life = 3;
     public int power = 1;
-    [SerializeField] private Camera cam;
+    //[SerializeField] private Camera cam;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "bullet")
@@ -23,15 +23,15 @@ public class PlayerStatus : Singletorn<PlayerStatus>
         }
     }
     
-    private void Update()
-    {
-        var dir = (cam.transform.forward *
-            Input.GetAxis("Vertical") + cam.transform.right * Input.GetAxis("Horizontal")).normalized;
+    //private void Update()
+    //{
+        //var dir = (cam.transform.forward *
+            //Input.GetAxis("Vertical") + cam.transform.right * Input.GetAxis("Horizontal")).normalized;
         
         
         //보는 방향으로 플레이어 회전
-        transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
-    }
+        //transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
+    //}
     
     
     public void Init()

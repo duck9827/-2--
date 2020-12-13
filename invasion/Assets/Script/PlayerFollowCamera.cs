@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class PlayerFollowCamera : MonoBehaviour
-{
-    public Transform target;        // 따라다닐 타겟 오브젝트의 Transform
+public class PlayerFollowCamera : MonoBehaviour {
  
-    private Transform tr;                // 카메라 자신의 Transform
+    public GameObject target;
  
-    void Start()
-    {
-        tr = GetComponent<Transform>();
-    }
+    public float offsetX;
+    public float offsetY;
+    public float offsetZ;
  
-    void LateUpdate()
-    {
-        tr.position = new Vector3(target.position.x - 0.52f, tr.position.y, target.position.z - 6.56f);
- 
-        tr.LookAt(target);
+    // Update is called once per frame
+    void Update () {
+        Vector3 FixedPos =
+            new Vector3(
+                target.transform.position.x + offsetX,
+                target.transform.position.y + offsetY,
+                target.transform.position.z + offsetZ);
+        transform.position = FixedPos;
     }
 }
+
+
