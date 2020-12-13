@@ -21,21 +21,29 @@
   <component name="ChangeListManager">
     <list default="true" id="0b42af53-80b0-4c94-95ec-a23f3ffed4cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerFollowCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerFollowCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Boss/BossPattern2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Boss/BossPattern2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4f/4f17bc54ea07492749465fa1442f54ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/02/024070f2e32c8c0d0c75f2eee43d3273" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3af5159dec55a0d871b66013b62acdde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/44e5383b191020a1854b4bdbd13c7488" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/48/480efd7ea28e126d98c38a1d43a701e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/53/5360eb7eaacdc7fa6f01cadedc22b341" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c8a430792d94ba2f4f2a24a756599aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8e7377f5eac341b0be548344dbbab30f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a3/a344f02d30124bb8b384daf7cbdba0a4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b8/b8cac313d3ccd64b12f2e8558634053b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c1/c1cf47d2ee7fa19a28b88666eb80595d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/ea/eac0c6c208dc407d52b6d7a7c1096b69.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/ea/eac0c6c208dc407d52b6d7a7c1096b69.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/e1/e1ad597a1ef5aed0247442d51171c437.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/e1/e1ad597a1ef5aed0247442d51171c437.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/e4/e45530ded9da10799cd6643e0f015e1d.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/e4/e45530ded9da10799cd6643e0f015e1d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/84/84b84e82d60d1cde8decd7c5d23df1ac.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/84/84b84e82d60d1cde8decd7c5d23df1ac.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +72,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerStatus.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/PlayerFollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Boss/BossPattern2.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +121,7 @@
       <workItem from="1607678167337" duration="10876000" />
       <workItem from="1607772595793" duration="841000" />
       <workItem from="1607776791664" duration="4895000" />
-      <workItem from="1607849432165" duration="6158000" />
+      <workItem from="1607849432165" duration="8300000" />
     </task>
     <servers />
   </component>

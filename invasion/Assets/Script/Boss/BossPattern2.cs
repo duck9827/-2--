@@ -66,6 +66,8 @@ public class BossPattern2 : Singletorn<BossPattern2>
                     o.GetComponent<Rigidbody>().AddForce(p * i);
 
                     o.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                    o.GetComponent<Transform>().localScale = new Vector3(0.22f, 0.24f, 0.57f); //노란색 총알의 사이즈 변경
+                    
                 }
             }
             yield return new WaitForSeconds(2f);
