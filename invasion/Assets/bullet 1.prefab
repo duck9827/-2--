@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5035736911647366156}
   - component: {fileID: 6896978503666289915}
   - component: {fileID: -2500700855577268094}
+  - component: {fileID: 10236182420537814}
   m_Layer: 0
   m_Name: bullet 1
   m_TagString: mybullet
@@ -125,3 +126,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4653384efc3d204183524e55fda27a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!122 &10236182420537814
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464581850555731460}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4289199872
+  m_Size: 0.35

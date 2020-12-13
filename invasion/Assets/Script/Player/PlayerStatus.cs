@@ -30,7 +30,7 @@ public class PlayerStatus : Singletorn<PlayerStatus>
         
         
         //보는 방향으로 플레이어 회전
-        transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z) * -1);
+        transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
     }
     
     
@@ -45,4 +45,3 @@ public class PlayerStatus : Singletorn<PlayerStatus>
     
 
 }
-
