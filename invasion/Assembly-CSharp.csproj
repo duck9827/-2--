@@ -51,10 +51,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\UI\UIManager.cs" />
+     <Compile Include="Assets\Script\UI\PlayerHP.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Script\BulletState.cs" />
      <Compile Include="Assets\Script\PlayerFollowCamera.cs" />
      <Compile Include="Assets\Script\Player\PlayerStatus.cs" />
+     <Compile Include="Assets\Script\Timer.cs" />
      <Compile Include="Assets\Script\UI\scale_fix.cs" />
      <Compile Include="Assets\Script\Boss\BossStatus.cs" />
      <Compile Include="Assets\Script\Boss\BossController.cs" />
@@ -63,7 +65,6 @@
      <Compile Include="Assets\Script\UI\HP_Zero.cs" />
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Singletorn.cs" />
-     <Compile Include="Assets\Script\UI\PlayerHP.cs" />
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

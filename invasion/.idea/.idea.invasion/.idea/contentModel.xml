@@ -24,6 +24,7 @@
           </e>
           <e p="PlayerFollowCamera.cs" t="Include" />
           <e p="Singletorn.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="HP_Zero.cs" t="Include" />
             <e p="PlayerHP.cs" t="Include" />
