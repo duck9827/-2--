@@ -65,6 +65,10 @@ public class BossController : Singletorn<BossController>
                 break;
 
             case BossState.dead:
+                //BossPattern1.Instance.StopPattern();
+                BossPattern2.Instance.StopPattern();
+                //BossPattern3.Instance.StopPattern();
+                //BossPattern4.Instance.StopPattern();
                 break;
         }
     }
@@ -74,6 +78,10 @@ public class BossController : Singletorn<BossController>
         state = BossState.idle;
         _status.Init();
         transform.position = new Vector3(0, 0, 33);
+    }
+    public void Over()
+    {
+        state = BossState.dead;
     }
 
 }

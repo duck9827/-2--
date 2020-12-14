@@ -14,13 +14,13 @@ public class PlayerStatus : Singletorn<PlayerStatus>
     {
         if(other.tag == "bullet")
         {
-            Hp -= 0.01f;
+            Hp -= 0.05f;
 
             other.gameObject.SetActive(false);//임시로 삭제
 
-            if(Hp == 0)
+            if(Hp <= 0)
             {
-                print("You dead");
+                GameManager.Instance.GameOver();
             }
 
         }
