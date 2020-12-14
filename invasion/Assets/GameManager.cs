@@ -18,8 +18,7 @@ public class GameManager : Singletorn<GameManager>
 
     public void GameReset()
     {
-        PlayerStatus.Instance.Init();
-        BossController.Instance.Init();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(gameObject.scene.name);
     }
 
 }
