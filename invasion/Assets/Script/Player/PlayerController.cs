@@ -31,22 +31,35 @@ public class PlayerController : MonoBehaviour
             Input.GetAxis("Vertical") + cam.transform.right * Input.GetAxis("Horizontal")).normalized;
         
         _agent.Move(new Vector3(dir.x, 0, dir.z) * Time.deltaTime * speed);
-        
+
         //보는 방향으로 플레이어 회전
-        transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
+        if (dir.magnitude > 0)
+            transform.rotation = Quaternion.LookRotation(new Vector3(dir.x, 0, dir.z));
         
         if (Input.GetKeyDown(KeyCode.Z)) //z키를 누를시 공격 
         {
-            GameObject o = ObjectPoolManager.Instance.Spawn("myB", transform.position, transform.rotation);
-            o.GetComponent<Rigidbody>().AddForce(transform.forward * 5);
+            StartCoroutine("Shot");
+        }
+        if (Input.GetKeyUp(KeyCode.Z)) //z키를 누를시 공격 
+        {
+            StopCoroutine("Shot");
         }
 
         //if (Input.GetKeyDown(KeyCode.Space)) //스페이스바를 누를 시 점프
         //{
-            //rigidbody.AddForce(Vector3.up * jumpPower , ForceMode.Impulse);
+        //rigidbody.AddForce(Vector3.up * jumpPower , ForceMode.Impulse);
         //}
 
     }
 
+    IEnumerator Shot()
+    {
+        while (true)
+        {
+            GameObject o = ObjectPoolManager.Instance.Spawn("myB", transform.position, transform.rotation);
+            o.GetComponent<Rigidbody>().AddForce(transform.forward * 6);
 
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
 }

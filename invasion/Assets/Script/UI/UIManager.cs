@@ -21,6 +21,7 @@ public class UIManager : Singletorn<UIManager>
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menu.SetActive(!menu.activeSelf);
+            Time.timeScale = menu.activeSelf == false? 1 : 0;
         }
     }
 

@@ -43,4 +43,8 @@ public class GameManager : Singletorn<GameManager>
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameObject.scene.name);
     }
 
+    public void GameExit()
+    {
+        Application.Quit();
+    }
 }
