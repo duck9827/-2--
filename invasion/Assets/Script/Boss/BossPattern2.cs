@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BossPattern2 : Singletorn<BossPattern2>
 {
-    public GameObject bullet;//임시
 
     [SerializeField] float patroll = 10f;
     [SerializeField] float patrollDelay = 5f;
@@ -46,7 +45,7 @@ public class BossPattern2 : Singletorn<BossPattern2>
                 o.GetComponent<Rigidbody>().AddForce(p * 5);
             }
             r += 5;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
     }
     IEnumerator triattack()

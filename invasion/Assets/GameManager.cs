@@ -8,6 +8,8 @@ public class GameManager : Singletorn<GameManager>
     [SerializeField] GameObject overpanel;
     [SerializeField] GameObject menupanel;
 
+    private float[] scores;
+
 
     void Start()
     {

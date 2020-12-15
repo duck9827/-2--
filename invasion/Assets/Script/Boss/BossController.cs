@@ -39,7 +39,7 @@ public class BossController : Singletorn<BossController>
                 break;
 
             case BossState.pattern2:
-                if (_status.percent < 0)
+                if (_status.percent < 0.5)
                 {
                     BossPattern2.Instance.StopPattern();
                     //BossPattern3.Instance.StartPattern();
@@ -51,7 +51,7 @@ public class BossController : Singletorn<BossController>
                 if (_status.percent < 0.25)
                 {
                     //BossPattern3.Instance.StopPattern();
-                    //BossPattern4.Instance.StartPattern();
+                    BossPattern4.Instance.StartPattern();
                     state = BossState.pattern4;
                 }
                 break;
@@ -59,7 +59,7 @@ public class BossController : Singletorn<BossController>
             case BossState.pattern4:
                 if (_status.HP <= 0)
                 {
-                    //BossPattern4.Instance.StopPattern();
+                    BossPattern4.Instance.StopPattern();
                     state = BossState.dead;
                     GameManager.Instance.Win();
                 }
@@ -69,7 +69,7 @@ public class BossController : Singletorn<BossController>
                 //BossPattern1.Instance.StopPattern();
                 BossPattern2.Instance.StopPattern();
                 //BossPattern3.Instance.StopPattern();
-                //BossPattern4.Instance.StopPattern();
+                BossPattern4.Instance.StopPattern();
                 break;
         }
     }

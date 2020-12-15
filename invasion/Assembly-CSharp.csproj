@@ -72,6 +72,7 @@
     <Compile Include="Assets\Script\Player\PlayerController.cs" />
     <Compile Include="Assets\Script\Singletorn.cs" />
     <Compile Include="Assets\Script\TimerTextUI.cs" />
+    <Compile Include="Assets\Script\Boss\BossPattern4.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
