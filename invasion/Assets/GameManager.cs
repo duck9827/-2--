@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : Singletorn<GameManager>
 {
@@ -18,6 +19,11 @@ public class GameManager : Singletorn<GameManager>
     {
 
 
+    }
+
+    public void Win()
+    {
+        overpanel.GetComponentInChildren<Text>().text = "YOU WIN";
     }
 
     public void GameOver()

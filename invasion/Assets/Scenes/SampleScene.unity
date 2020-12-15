@@ -856,7 +856,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2418
+  m_Name: pb_Mesh-1856
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2257,6 +2257,8 @@ MonoBehaviour:
     prefab: {fileID: 1464581850555731460, guid: 9cf5327801d01784c80ed480942b8dfa, type: 3}
   - name: enB
     prefab: {fileID: 4592656856250818658, guid: 124c78013cfb97841a0edca8480815ea, type: 3}
+  - name: zako
+    prefab: {fileID: 6125311177426521842, guid: 02ae223b42169c5418512935b850410b, type: 3}
 --- !u!4 &808632653
 Transform:
   m_ObjectHideFlags: 0
