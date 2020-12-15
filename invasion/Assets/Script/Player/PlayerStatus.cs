@@ -7,12 +7,12 @@ public class PlayerStatus : Singletorn<PlayerStatus>
 {
     public float MaxHp;
     public float Hp;
-    //[SerializeField] private float Hp;
     public int power = 1;
+    public static bool noDamage = false;     //무적상태 판정 여부 변수
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "bullet")
+        if((other.tag == "bullet")&&(noDamage == false))     //무적상태가 아닌 상황에서 총알을 맞는다면
         {
             Hp -= 0.05f;
 
