@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : Singletorn<GameManager>
 {
@@ -10,7 +11,7 @@ public class GameManager : Singletorn<GameManager>
 
     void Start()
     {
-        
+        Timer.Timer.Instance.TimerStart();
     }
 
   
@@ -20,8 +21,16 @@ public class GameManager : Singletorn<GameManager>
 
     }
 
+    public void Win()
+    {
+        Timer.Timer.Instance.TimerStop();
+        overpanel.SetActive(true);
+        overpanel.GetComponentInChildren<Text>().text = "CLEAR!";
+    }
+
     public void GameOver()
     {
+        Timer.Timer.Instance.TimerStop();
         overpanel.SetActive(true);
         BossController.Instance.Over();
         Destroy(GameObject.Find("Player"));
@@ -35,4 +44,8 @@ public class GameManager : Singletorn<GameManager>
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameObject.scene.name);
     }
 
+    public void GameExit()
+    {
+        Application.Quit();
+    }
 }

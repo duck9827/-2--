@@ -8,7 +8,8 @@ public class CameraManager : MonoBehaviour
 {
     public Camera ThirdPersonCamera;
     public Camera TopViewCamera;
-
+    //private BossPattern2 call = GameObject.Find("Top View Camera").GetComponent < Update > ();
+    
     private void Start()     //시작할땐 3인칭 카메라를 켜둡니다. 
     {
         ThirdPersonView();

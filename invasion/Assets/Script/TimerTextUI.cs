@@ -14,12 +14,6 @@ namespace Timer
         {
             _text = GetComponent<Text>();
         }
-        
-        void Start()
-        {
-        
-        }
-
 
         void Update()
         {

@@ -9,21 +9,27 @@ namespace Timer
     public class Timer : Singletorn<Timer>
     {
         private float _time;
+        private bool active;
         public float CurrentTime => _time;
-
-        void Start()
-        {
-
-        }
-
-
 
         void Update()
         {
-            _time += Time.deltaTime;
-            
+            if(active)
+                _time += Time.deltaTime;
+        }
 
-            
+        public void TimerStart()
+        {
+            active = true;
+        }
+        public void TimerStop()
+        {
+            active = false;
+        }
+        public void TimerReset()
+        {
+            active = false;
+            _time = 0;
         }
     }
 }
