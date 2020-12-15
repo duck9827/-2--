@@ -1,21 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class BossPattern2 : Singletorn<BossPattern2>
 {
     public GameObject bullet;//임시
-
+    public static bool topview = false;     //보스패턴 시작시 true로 전환 (탑뷰 카메라 전환을 위함)
+    
+    //[SerializeField] private CameraManager _cameraManager;
     [SerializeField] float patroll = 10f;
     [SerializeField] float patrollDelay = 5f;
     private bool active = false;
     private Vector3 d;
 
+
     private void Update()
     {
-        if(active)
+        if (active)
+        {
             transform.position = Vector3.Lerp(transform.position, d, 0.005f);
+            topview = true;     //카메라가 탑뷰로 전환됨 (CameraManager스크립트에서 처리)
+        }
 
+        if (active == false)     //만약 보스 패턴이 시작되거나 끝나지 않았을경우 3인칭뷰로 전환합니다.
+        {
+            topview = false;
+        }
     }
 
     public void StartPattern()

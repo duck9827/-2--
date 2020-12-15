@@ -66,51 +66,53 @@
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Singletorn.cs" />
      <Compile Include="Assets\Script\TimerTextUI.cs" />
+     <Compile Include="Assets\Script\ButtonActive.cs" />
+     <Compile Include="Assets\Script\CameraManager.cs" />
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProGrids">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProGrids.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/선재/과제/게임엔진2/텀프/-2--/invasion/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/선재/과제/게임엔진2/Term/-2--/invasion/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/2020.1.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
