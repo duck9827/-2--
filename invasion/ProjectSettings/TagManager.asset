@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bullet
   - mybullet
+  - TopView
   layers:
   - Default
   - TransparentFX
