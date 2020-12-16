@@ -869,7 +869,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1336
+  m_Name: pb_Mesh-1216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1517,7 +1517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_RootOrder
@@ -1529,7 +1529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1537,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1581,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 44
+      value: -70.00001
       objectReference: {fileID: 0}
     - target: {fileID: 1635141588031469647, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2469,7 +2469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &897967622
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2488,8 +2488,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.42380744}
   m_AnchorMax: {x: 0.6165017, y: 1}
-  m_AnchoredPosition: {x: 153.95798, y: -103.79575}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 153.95798, y: -140.45988}
+  m_SizeDelta: {x: 0, y: 73.32828}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &897967623
 MonoBehaviour:
@@ -3457,6 +3457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overpanel: {fileID: 897967621}
   menupanel: {fileID: 1515972402}
+  scoreUI: {fileID: 1635141588031469644, guid: b6abe9d934ad73241a9bf60355bece5a, type: 3}
 --- !u!4 &1395273742
 Transform:
   m_ObjectHideFlags: 0
