@@ -72,6 +72,7 @@
      <Compile Include="Assets\Script\Singletorn.cs" />
      <Compile Include="Assets\Script\TimerTextUI.cs" />
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
+     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/선재/과제/게임엔진2/TP/-2--/invasion/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

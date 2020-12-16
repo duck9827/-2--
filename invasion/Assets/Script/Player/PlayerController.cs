@@ -8,23 +8,14 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     [SerializeField] private float speed = 5f;
-
-    //private Rigidbody rigidbody;
-    private NavMeshAgent _agent; //스테이지 네비게이션 bake 필요
     
-    //public float jumpPower = 50f;
+    private NavMeshAgent _agent; //스테이지 네비게이션 bake 필요
     
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
     }
 
-    //void Start()
-    //{
-        // 힘을 가하기 위해 게임 오브젝트에 추가된 Rigidbody 컴포넌트의 인스턴스를 얻는다.
-        //rigidbody = GetComponent<Rigidbody>();
-    //}
-    
     private void Update()
     {
         var dir = (cam.transform.forward *
@@ -45,10 +36,10 @@ public class PlayerController : MonoBehaviour
             StopCoroutine("Shot");
         }
 
-        //if (Input.GetKeyDown(KeyCode.Space)) //스페이스바를 누를 시 점프
-        //{
-        //rigidbody.AddForce(Vector3.up * jumpPower , ForceMode.Impulse);
-        //}
+        if (Input.GetKeyDown(KeyCode.Space)) //스페이스바를 누를 시 무적
+        {
+            PlayerStatus.noDamage = true;     //무적상태로 변경
+        }
 
     }
 
