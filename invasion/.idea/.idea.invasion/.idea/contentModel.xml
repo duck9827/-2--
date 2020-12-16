@@ -33,6 +33,7 @@
           <e p="TimerTextUI.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="HP_Zero.cs" t="Include" />
+            <e p="NoDamageTimeUI.cs" t="Include" />
             <e p="PlayerHP.cs" t="Include" />
             <e p="scale_fix.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
