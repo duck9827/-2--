@@ -66,6 +66,7 @@ MonoBehaviour:
   lerpv: 0.001
   speed: 8
   MaxAngle: 120
+  ef: {fileID: 7374799628653730309, guid: 85b2cb58432c2054ebc4582bdde5eb37, type: 3}
 --- !u!136 &908123144413081881
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -79,7 +80,7 @@ CapsuleCollider:
   m_Radius: 2
   m_Height: 6
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 2.263435}
+  m_Center: {x: 0, y: 0, z: -1.86}
 --- !u!1 &2532417002977885568
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2532417002977885568}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1939404046296304964}
@@ -187,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3766763767629933375}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1939404046296304964}

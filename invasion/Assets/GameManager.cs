@@ -18,7 +18,11 @@ public class GameManager : Singletorn<GameManager>
     void Update()
     {
 
+    }
 
+    private void SetScore()
+    {
+        overpanel.transform.Find("NowScoreUI").GetComponentInChildren<Text>().text = "현재: " + Timer.Timer.Instance.GetTimeText();
     }
 
     public void Win()
@@ -26,6 +30,7 @@ public class GameManager : Singletorn<GameManager>
         Timer.Timer.Instance.TimerStop();
         overpanel.SetActive(true);
         overpanel.GetComponentInChildren<Text>().text = "CLEAR!";
+        SetScore();
     }
 
     public void GameOver()
@@ -34,6 +39,7 @@ public class GameManager : Singletorn<GameManager>
         overpanel.SetActive(true);
         BossController.Instance.Over();
         Destroy(GameObject.Find("Player"));
+        SetScore();
     }
 
 

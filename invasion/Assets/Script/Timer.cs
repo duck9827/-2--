@@ -17,6 +17,11 @@ namespace Timer
             if(active)
                 _time += Time.deltaTime;
         }
+        public String GetTimeText()
+        {
+            var timeSpan = new TimeSpan(0, 0, 0, 0, (int)(Timer.Instance.CurrentTime * 1000));
+            return $"{timeSpan.Minutes:00}:{timeSpan.Seconds:00}.{timeSpan.Milliseconds:000}";
+        }
 
         public void TimerStart()
         {

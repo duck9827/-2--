@@ -9,6 +9,7 @@ public class ShipState : MonoBehaviour
     [SerializeField] float lerpv;
     [SerializeField] float speed;
     [SerializeField] float MaxAngle;
+    [SerializeField] GameObject ef;
 
 
     private void Awake()
@@ -36,6 +37,11 @@ public class ShipState : MonoBehaviour
     private void OnEnable()
     {
         rigidbody.velocity = Vector3.zero;
+    }
+
+    private void OnDisable()
+    {
+        Instantiate(ef, transform.position, Quaternion.identity);
     }
 
     private void OnTriggerEnter(Collider other)

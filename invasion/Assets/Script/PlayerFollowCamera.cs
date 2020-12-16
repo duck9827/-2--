@@ -12,6 +12,9 @@ public class PlayerFollowCamera : MonoBehaviour {
  
     // Update is called once per frame
     void Update () {
+        if (target == null)
+            return;
+
         Vector3 FixedPos =
             new Vector3(
                 target.transform.position.x + offsetX,
