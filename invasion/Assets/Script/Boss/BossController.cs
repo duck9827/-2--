@@ -30,7 +30,7 @@ public class BossController : Singletorn<BossController>
                 break;
 
             case BossState.pattern1:
-                if(_status.percent < 0.75 || true)
+                if(_status.percent < 0.75)
                 {
                     //BossPattern1.Instance.StopPattern();
                     BossPattern2.Instance.StartPattern();
