@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_invasion.1793320171.00" t="ExcludeRecursive" />
-    <e p="D:\선재\과제\게임엔진2\Term\-2--\invasion" t="IncludeRecursive">
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_invasion.936184246.00" t="ExcludeRecursive" />
+    <e p="D:\선재\과제\게임엔진2\게임엔진2_Term\-2--\invasion" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="GameManager.cs" t="Include" />
@@ -14,9 +14,11 @@
           <e p="Boss" t="Include">
             <e p="BossController.cs" t="Include" />
             <e p="BossPattern2.cs" t="Include" />
+            <e p="BossPattern4.cs" t="Include" />
             <e p="BossStatus.cs" t="Include" />
           </e>
           <e p="BulletState.cs" t="Include" />
+          <e p="ButtonActive.cs" t="Include" />
           <e p="CameraManager.cs" t="Include" />
           <e p="CoolTimeUI.cs" t="Include" />
           <e p="ObjectPoolManager.cs" t="Include" />
@@ -25,6 +27,7 @@
             <e p="PlayerStatus.cs" t="Include" />
           </e>
           <e p="PlayerFollowCamera.cs" t="Include" />
+          <e p="ShipState.cs" t="Include" />
           <e p="Singletorn.cs" t="Include" />
           <e p="Timer.cs" t="Include" />
           <e p="TimerTextUI.cs" t="Include" />
@@ -34,6 +37,9 @@
             <e p="scale_fix.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
+        </e>
+        <e p="SkySerie Freebie" t="Include">
+          <e p="Hdri setup.txt" t="Include" />
         </e>
       </e>
       <e p="invasion.sln" t="IncludeFlat" />
