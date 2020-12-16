@@ -46,11 +46,12 @@ public class BossPattern4 : Singletorn<BossPattern4>
     {
         while (active)
         {
-            for (int j = -1; j < 2; j++)
+            for (int j = 0; j < 3; j++)
             {
-                Quaternion q = Quaternion.Euler(0, j * 30, 0);
+                Vector3 pos = new Vector3(j*5,0,0);
+                Quaternion q = Quaternion.Euler(0, j * 90, 0);
 
-                GameObject o = ObjectPoolManager.Instance.Spawn("ship", transform.position, q);
+                GameObject o = ObjectPoolManager.Instance.Spawn("ship", transform.position + pos , q);
                 
             }
             yield return new WaitForSeconds(5f);

@@ -20,4 +20,12 @@ public class BulletState : MonoBehaviour
     {
         GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.name == "Stage")
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

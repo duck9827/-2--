@@ -58,7 +58,7 @@ public class BossPattern2 : Singletorn<BossPattern2>
                 o.GetComponent<Rigidbody>().AddForce(p * 5);
             }
             r += 5;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
     }
     IEnumerator triattack()
@@ -82,7 +82,7 @@ public class BossPattern2 : Singletorn<BossPattern2>
                     
                 }
             }
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
         }
     }
     IEnumerator moving()
