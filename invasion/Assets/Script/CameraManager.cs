@@ -33,7 +33,7 @@ public class CameraManager : MonoBehaviour
         {
             TopView();
         }
-        if (BossPattern2.topview == false)     //3인칭뷰로 전환
+        else if (BossPattern3.topview == false)     //3인칭뷰로 전환
         {
             ThirdPersonView();
         }

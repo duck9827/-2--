@@ -134,7 +134,9 @@ GameObject:
   - component: {fileID: 15885261}
   - component: {fileID: 15885260}
   - component: {fileID: 15885263}
+  - component: {fileID: 15885267}
   - component: {fileID: 15885262}
+  - component: {fileID: 15885266}
   - component: {fileID: 15885265}
   - component: {fileID: 15885264}
   m_Layer: 0
@@ -226,6 +228,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6294517611978a244abe1cd5b6d34423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &15885266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15885259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3eb0dff08e03b34ab6a8f4934366791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: 0
+  Vertex: 4
+  sup: 3
+  speed: 3
+  bullet: {fileID: 0}
+  patroll: 10
+  patrollDelay: 5
+--- !u!114 &15885267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15885259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10aaedd84ff15541a350d183846f39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: 0
+  sup: 3
+  speed: 3
+  bullet: {fileID: 0}
+  patroll: 0
+  patrollDelay: 0
 --- !u!1 &69266273
 GameObject:
   m_ObjectHideFlags: 0
