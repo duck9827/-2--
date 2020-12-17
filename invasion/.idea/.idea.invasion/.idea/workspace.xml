@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b42af53-80b0-4c94-95ec-a23f3ffed4cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.invasion/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CloudedSunGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CloudedSunGlow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/scale_fix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/scale_fix.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +38,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/CoolTimeUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/PlayerHP.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/CoolTimeUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,6 +67,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CoolTimeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/NoDamageTimeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/scale_fix.cs" />
       </list>
     </option>
   </component>
@@ -117,6 +124,7 @@
       <workItem from="1608023207354" duration="1542000" />
       <workItem from="1608142998033" duration="2204000" />
       <workItem from="1608182038011" duration="20000" />
+      <workItem from="1608188884012" duration="654000" />
     </task>
     <servers />
   </component>
