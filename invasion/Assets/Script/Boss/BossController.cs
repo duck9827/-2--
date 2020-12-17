@@ -25,14 +25,15 @@ public class BossController : Singletorn<BossController>
         switch (state)
         {
             case BossState.idle:
-                //BossPattern1.Instance.StartPattern();
+                BossPattern1.Instance.StartPattern();
+                
                 state = BossState.pattern1;
                 break;
 
             case BossState.pattern1:
                 if(_status.percent < 0.75)
                 {
-                    //BossPattern1.Instance.StopPattern();
+                    BossPattern1.Instance.StopPattern();
                     BossPattern2.Instance.StartPattern();
                     state = BossState.pattern2;
                 }
@@ -41,8 +42,9 @@ public class BossController : Singletorn<BossController>
             case BossState.pattern2:
                 if (_status.percent < 0.5)
                 {
+                    
                     BossPattern2.Instance.StopPattern();
-                    //BossPattern3.Instance.StartPattern();
+                    BossPattern3.Instance.StartPattern();
                     state = BossState.pattern3;
                 }
                 break;
@@ -50,7 +52,7 @@ public class BossController : Singletorn<BossController>
             case BossState.pattern3:
                 if (_status.percent < 0.25)
                 {
-                    //BossPattern3.Instance.StopPattern();
+                    BossPattern3.Instance.StopPattern();
                     BossPattern4.Instance.StartPattern();
                     state = BossState.pattern4;
                 }
@@ -66,9 +68,9 @@ public class BossController : Singletorn<BossController>
                 break;
 
             case BossState.dead:
-                //BossPattern1.Instance.StopPattern();
+                BossPattern1.Instance.StopPattern();
                 BossPattern2.Instance.StopPattern();
-                //BossPattern3.Instance.StopPattern();
+                BossPattern3.Instance.StopPattern();
                 BossPattern4.Instance.StopPattern();
                 break;
         }
