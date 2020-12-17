@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        print(skill_timer);
+        //print(skill_timer);
         //print(timer);
         var dir = (cam.transform.forward *
             Input.GetAxis("Vertical") + cam.transform.right * Input.GetAxis("Horizontal")).normalized;

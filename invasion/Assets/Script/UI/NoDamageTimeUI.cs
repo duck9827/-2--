@@ -14,7 +14,7 @@ public class NoDamageTimeUI : MonoBehaviour
     
     void Update()
     {
-        print(skillTImer.value);
+        //print(skillTImer.value);
         if ((skillTImer.value >= 0.0f)&&(PlayerStatus.noDamage == true))
         {
             skillTImer.value -= Time.deltaTime;     //스킬시간만큼 슬라이더가 줄어듭니다. 

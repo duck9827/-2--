@@ -5,14 +5,8 @@ using UnityEngine;
 public class BossPattern4 : Singletorn<BossPattern4>
 {
 
-    //[SerializeField] float patroll = 10f;
-    //[SerializeField] float patrollDelay = 5f;
     private bool active = false;
 
-    private void Update()
-    {
-
-    }
 
     public void StartPattern()
     {
