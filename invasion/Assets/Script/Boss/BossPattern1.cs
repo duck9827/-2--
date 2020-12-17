@@ -23,8 +23,7 @@ public class BossPattern1 : Singletorn<BossPattern3>
     List<float> xx = new List<float>();
 
    
-    [SerializeField] float patroll = 10f;
-    [SerializeField] float patrollDelay = 5f;
+
     private bool active = false;
     private Vector3 d;
     private void Update()

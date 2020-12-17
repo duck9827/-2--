@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipState : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private Rigidbody rigid;
     private Transform player;
     [SerializeField] float lerpv;
     [SerializeField] float speed;
@@ -14,7 +14,7 @@ public class ShipState : MonoBehaviour
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody>();
         player = GameObject.Find("Player").transform;
     }
 
@@ -28,7 +28,7 @@ public class ShipState : MonoBehaviour
 
         if (angle < MaxAngle)
         {
-            rigidbody.velocity = dir.normalized * speed;
+            rigid.velocity = dir.normalized * speed;
             transform.LookAt(transform.position + dir);
         }
     }
@@ -36,7 +36,7 @@ public class ShipState : MonoBehaviour
 
     private void OnEnable()
     {
-        rigidbody.velocity = Vector3.zero;
+        rigid.velocity = Vector3.zero;
     }
 
     private void OnDisable()
