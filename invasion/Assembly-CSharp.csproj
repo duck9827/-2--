@@ -72,6 +72,7 @@
      <Compile Include="Assets\Script\Player\PlayerController.cs" />
      <Compile Include="Assets\Script\Singletorn.cs" />
      <Compile Include="Assets\Script\TimerTextUI.cs" />
+     <Compile Include="Assets\Script\MoveSky.cs" />
      <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
      <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
  <Reference Include="Unity.Timeline.Editor">

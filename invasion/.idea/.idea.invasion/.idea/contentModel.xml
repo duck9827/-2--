@@ -21,6 +21,7 @@
           <e p="ButtonActive.cs" t="Include" />
           <e p="CameraManager.cs" t="Include" />
           <e p="CoolTimeUI.cs" t="Include" />
+          <e p="MoveSky.cs" t="Include" />
           <e p="ObjectPoolManager.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerController.cs" t="Include" />
