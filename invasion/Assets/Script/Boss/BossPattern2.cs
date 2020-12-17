@@ -24,7 +24,7 @@ public class BossPattern2 : Singletorn<BossPattern2>
             topview = true;     //카메라가 탑뷰로 전환됨 (CameraManager스크립트에서 처리)
         }
 
-        if (active == false)     //만약 보스 패턴이 시작되거나 끝나지 않았을경우 3인칭뷰로 전환합니다.
+        else
         {
             topview = false;
         }

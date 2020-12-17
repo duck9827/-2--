@@ -6,8 +6,6 @@ using System;
 
 public class BossPattern3 : Singletorn<BossPattern3>
 {
-    public static bool topview = false; 
-    
     [Range(0,360)]
     public float rotation = 0f;
 
@@ -55,14 +53,8 @@ public class BossPattern3 : Singletorn<BossPattern3>
          if (active)
         {
             transform.position = Vector3.Lerp(transform.position, d, 0.005f);
-            topview = true;     //카메라가 탑뷰로 전환됨 (CameraManager스크립트에서 처리)
-        }
 
-        if (active == false)     //만약 보스 패턴이 시작되거나 끝나지 않았을경우 3인칭뷰로 전환합니다.
-        {
-            topview = false;
         }
-
     }
 
     public void StartPattern()

@@ -6,7 +6,7 @@ using System;
 
 public class BossPattern1 : Singletorn<BossPattern3>
 {
-    public static bool topview = false; 
+    public static bool thirdview = false; 
     
     [Range(0,360)]
     public float rotation = 0f;
@@ -33,8 +33,13 @@ public class BossPattern1 : Singletorn<BossPattern3>
          if (active)
         {
             transform.position = Vector3.Lerp(transform.position, d, 0.005f);
-           
+            thirdview = true;
+
         }
+         else
+         {
+             thirdview = false;
+         }
     }
 
     public void StartPattern()

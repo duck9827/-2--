@@ -7,6 +7,7 @@ public class BossPattern4 : Singletorn<BossPattern4>
 
     //[SerializeField] float patroll = 10f;
     //[SerializeField] float patrollDelay = 5f;
+    public static bool thirdview = false;
     private bool active = false;
 
     private void Update()
@@ -19,12 +20,14 @@ public class BossPattern4 : Singletorn<BossPattern4>
         active = true;
         StartCoroutine("circleattack", 3);
         StartCoroutine("triattack", 5);
+        thirdview = true;
     }
     public void StopPattern()
     {
         active = false;
         StopCoroutine("circleattack");
         StopCoroutine("triattack");
+        thirdview = false;
     }
 
     IEnumerator circleattack()

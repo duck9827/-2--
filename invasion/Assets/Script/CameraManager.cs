@@ -27,27 +27,19 @@ public class CameraManager : MonoBehaviour
         ThirdPersonCamera.enabled = true;
     }
 
-    private void Update()
+    private void Update()    
     {
-        if (BossPattern2.topview == true)     //top뷰로 전환
+        if (BossPattern1.thirdview == true)     //패턴1: 3인칭뷰로 전환
+        { 
+            ThirdPersonView();
+        }
+        else if (BossPattern2.topview == true)     //패턴2: top뷰로 전환
         {
             TopView();
         }
-        else if (BossPattern3.topview == false)     //3인칭뷰로 전환
+        else if (BossPattern4.thirdview == true)     //패턴4: 3인칭뷰로 전환
         {
             ThirdPersonView();
         }
     }
-    //private void Update()
-    //{
-        //if (Input.GetKey("1"))     //1번키를 누르면 탑뷰로 전환
-        //{
-            //TopView();
-        //}
-
-        //if (Input.GetKey("2"))     //2번키를 누르면 3인칭 뷰로 전환 
-        //{
-            //ThirdPersonView();
-        //}
-    //}
 }
