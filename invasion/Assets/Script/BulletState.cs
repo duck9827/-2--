@@ -18,7 +18,9 @@ public class BulletState : MonoBehaviour
 
     private void OnEnable()
     {
+        transform.localScale = Vector3.one * 0.7f;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<MeshRenderer>().material.color = Color.white;
     }
 
     private void OnTriggerExit(Collider other)

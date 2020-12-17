@@ -43,7 +43,7 @@ public class BossPattern3 : Singletorn<BossPattern3>
         }
         
     }
-    public GameObject bullet;//임시
+
     [SerializeField] float patroll = 10f;
     [SerializeField] float patrollDelay = 5f;
     private bool active = false;
