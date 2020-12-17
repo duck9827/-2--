@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class csUIPositon : MonoBehaviour
+public class scale_fix : MonoBehaviour
 {
     void Start()
     {
